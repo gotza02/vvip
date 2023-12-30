@@ -5,7 +5,7 @@ j="\033[0;33m"
 function lane() {
 echo -e "${y}────────────────────────────────────────────${exitsc}"
 }
-url_izin="https://raw.githubusercontent.com/BvsshXyz/izin/main/ipvps"
+url_izin="https://raw.githubusercontent.com/BvsshXyz/izinsc/main/ip"
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
@@ -63,3 +63,4 @@ systemctl disable badvpn-5
 systemctl stop badvpn-5
 systemctl enable badvpn-5
 systemctl start badvpn-5
+
