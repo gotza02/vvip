@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
-#read -rp "Sub Domain (Contoh: bayuvpn): " -e sub
-sub=vip-`</dev/urandom tr -dc 0-9 | head -c5`
+sub=$</dev/urandom dc a-z0-9 | head -c3`
+#read -p "Input Domain Name. (Contoh: bayuvpn): " -e sub
 DOMAIN=premiumserver.live
 SUB_DOMAIN=${sub}.premiumserver.live
 CF_ID=bayuagungriadi000@gmail.com
