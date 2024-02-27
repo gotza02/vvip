@@ -5,7 +5,7 @@ j="\033[0;33m"
 function lane() {
 echo -e "${y}────────────────────────────────────────────${exitsc}"
 }
-url_izin="https://raw.githubusercontent.com/BvsshXyz/izinsc/main/ip"
+url_izin="https://raw.githubusercontent.com/gotza02/izinsc/main/ip"
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
@@ -29,7 +29,7 @@ fi
 }
 checking_sc
 
-REPO="https://raw.githubusercontent.com/BvsshXyz/vvip/main/"
+REPO="https://raw.githubusercontent.com/gotza02/vvip/main/"
 wget -q -O /etc/xray/limit.vmess "${REPO}limit/vmess" >/dev/null 2>&1
 wget -q -O /etc/xray/limit.vless "${REPO}limit/vless" >/dev/null 2>&1
 wget -q -O /etc/xray/limit.trojan "${REPO}limit/trojan" >/dev/null 2>&1

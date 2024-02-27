@@ -1,13 +1,13 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/yuliusvpn/vvip/main/"
+REPO="https://raw.githubusercontent.com/gotza02/vvip/main/"
 
-wget -q -O /usr/local/sbin/quota "${REPO}limit/quota"
+wget -q -O /usr/local/sbin/quota "https://raw.githubusercontent.com/gotza02/script/main/filedownload/limit/quota"
 chmod +x /usr/local/sbin/quota
 chmod + x /usr/local/sbin/quota
 cd /usr/local/sbin/
 sed -i 's/\r//' quota
 cd
-wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
+wget -q -O /usr/bin/limit-ip "https://raw.githubusercontent.com/gotza02/script/main/filedownload/limit/limit-ip"
 chmod +x /usr/bin/*
 cd /usr/bin
 sed -i 's/\r//' limit-ip

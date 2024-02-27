@@ -9,12 +9,12 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/BvsshXyz/vvip/main/bot/bot.zip
+wget https://raw.githubusercontent.com/gotza02/vvip/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 clear
-wget https://raw.githubusercontent.com/BvsshXyz/vvip/main/bot/fvstore.zip
+wget https://raw.githubusercontent.com/gotza02/vvip/main/bot/fvstore.zip
 unzip fvstore.zip
 pip3 install -r kyt/requirements.txt
 
